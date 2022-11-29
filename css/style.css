@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainLogo {
+    height: 120px;
+    width: 120px;
+}
+
+main img {
+    height: 50%;
+    width: 50%;
+}
+
+.socialLogo {
+    height: 80px;
+    width: 80px;
+}
