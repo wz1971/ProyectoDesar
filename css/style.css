@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .mainLogo {
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
+}
+
+header {
+    background-color: #826aed;
+    }
+
+header nav {
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+    }
+header nav li{
+        display: inline;
+    }
+header nav a{
+        color: white;
+        display:inline-block;
+        padding:10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+.mainLogo {
+    height: 200px;
+    width: 200px;
 }
 
 main img {
