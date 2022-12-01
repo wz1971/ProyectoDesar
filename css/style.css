@@ -7,41 +7,35 @@
     margin: 0;
     padding: 0;
 }
-/*---Body---*/
-.indexBody {
-    background-color: #826aed ;
-}
-.misionBody {
-    background-color: #c879ff;
-}
-
-.nosotrosBody {
-    background-color: #ffb7ff;
-}
-
-.serviciosBody {
-    background-color: #3bf4fb;
-}
-
-.contactoBody {
-    background-color: #caff8a;
-}
-
 
 /*---Header---*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #08b377;
+}
+
 .mainLogo {
     height: 180px;
     width: 180px;
 }
 
 header nav {
-    text-align: center;
-}    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    text-decoration: none;
+}
 
 header nav ul li{
-    display: inline;
-    margin: 10px;
-    padding: 5px;
+    margin: 15px;
+    padding: 10px;
     }
 
 header nav ul li a {
@@ -55,8 +49,11 @@ header nav ul li a {
 /*---Main---*/
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../img/inicio_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,13 +66,96 @@ header nav ul li a {
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
     font-weight: 400;
     color: white;
     background: black;
     opacity: 0.5;
     }    
 
+.articles {
+    display:flex;
+    background-color: #209A67;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+.articleContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.articleContents h2 {
+    margin-bottom: 10px;
+}
+.articleContents p {
+    margin-top: 10px;
+}
+
+.equipo {
+    text-align: center;
+    background-color: #48A43F;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+.equipo h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.equipo h3 {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.equipo h4 {
+    font-weight: 600;
+    margin: 10px;
+    font-size: 1rem;
+    }
+
+.equipo p {
+    font-weight: 400;
+    font-size: 0.85rem;    
+    }
+
+.equipo div {
+    width: 200px;
+    padding: 20px;
+    display: inline-block;
+    }
+
+.servicios {
+    background-color: #209A67;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}    
+
+.servicios h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
 /*---Footer---*/
+footer {
+    background-color:  #08b377;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 footer ul li {
     display: inline;
@@ -84,7 +164,6 @@ footer ul li {
 .socialLogo {
     height: 60px;
     width: 60px;
-    margin: 10px;
-    padding: 10px;    
+    margin: 20px;
+    padding: 20px;    
 }
-
