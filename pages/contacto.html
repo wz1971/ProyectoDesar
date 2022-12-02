@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="shortcut icon" href="../img/logo_size_invert.jpg" type="image/x-icon">
     <title>Equipo Desar</title>
 </head>
+
 <body>
     <header>
         <div>
-            <img src="../img/white_logo_transparent_background.png" alt="Logo Desar"  class="mainLogo">
+            <img src="../img/white_logo_transparent_background.png" alt="Logo Desar" class="mainLogo">
         </div>
         <nav>
             <ul>
@@ -24,33 +26,57 @@
         </nav>
     </header>
     <main>
-        
-        <section>
+        <section class="contacto">
             <form action="submit">
-                <h1>Dejanos tus comentarios y nos contactaremos</h1>
-                <fieldset>
-                    <legend>Datos de contacto</legend>
-                    <label for="nombre">Nombre<input type="text" name="nombre" value="Ingresá tu Nombre"></label><br>
-                    <label for="apellido">Apellido<input type="text" name="apellido"
-                            value="Ingresá tu Apellido"></label><br>
-                    <label for="email">Email<input type="email" name="email" value="Ingresá tu Email"></label><br>
-                    <label for="telefono">Teléfono<input type="tel" name="telefono"
-                            value="Ingresá tu Teléfono"></label><br>
-                    <label for="comentarios">Comentarios<input type="text" name="comentarios"
-                            id="Dejanos tus comentarios"></label><br>
-                    <label for="cv">Dejanos tu CV<input type="file" name="cv"></label><br>
-                    <label for="enviar"><input type="button" value="Enviar"></label><br>
-                    <label for=""><input type="reset" value="Limpiar formulario"></label><br>
-                </fieldset>
+                <div class="contactoForm">
+                    <div>
+                        <h2>Dejanos tus datos y nos contactaremos</h2>
+                        <fieldset>
+                            <div>
+                                <label for="nombre">Nombre<input type="text" name="nombre"></label>
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido<input type="text" name="apellido"></label>
+                            </div>
+                            <div>
+                                <label for="email">Email<input type="email" name="email"></label>
+                            </div>
+                            <div>
+                                <label for="telefono">Teléfono<input type="tel" name="telefono"></label>
+                            </div>
+                            <h2>¿Te gustaría formar parte de nuestro equipo?</h2>
+                            <label for="cv">Dejanos tu CV<input type="file" name="cv"></label>
+                        </fieldset>
+                        <label for="reset"><input type="reset" value="Limpiar formulario"></label>
+                        <label for="submit"><input type="button" value="Enviar"></label>
+                    </div>
+                </div>
             </form>
+            <div class="contactoMap">
+                <div>
+                    <h2>¿Dónde estamos?</h2>
+                    <p>Hortiguera 1500<br>
+                        C1406CMF CABA<br>
+                        +54-9-11-2222-3333
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.680086145061!2d-58.44976913022461!3d-34.6377782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbca6ef4dbcd%3A0x44e45f4dd6dc7d06!2sHortiguera%201500%2C%20C1406CMF%20CABA!5e0!3m2!1ses-419!2sar!4v1669993430160!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
     <footer>
         <ul>
-            <li><a href="https://facebook.com"><img src="../img/facebook.png" alt="Facebook Logo" class="socialLogo"></a></li>
-            <li><a href="https://instagram.com"><img src="../img/instagram.png" alt="Instagram Logo" class="socialLogo"></a></li>
-            <li><a href="https://whatsapp.com"><img src="../img/whatsapp.png" alt="Whatsapp Logo" class="socialLogo"></a></li>
+            <li><a href="https://facebook.com"><img src="../img/facebook.png" alt="Facebook Logo"
+                        class="socialLogo"></a></li>
+            <li><a href="https://instagram.com"><img src="../img/instagram.png" alt="Instagram Logo"
+                        class="socialLogo"></a></li>
+            <li><a href="https://whatsapp.com"><img src="../img/whatsapp.png" alt="Whatsapp Logo"
+                        class="socialLogo"></a></li>
         </ul>
     </footer>
 </body>
+
 </html>

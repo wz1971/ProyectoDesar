@@ -2,11 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
+
+
 /*---Reset---*/ 
 * {
     margin: 0;
     padding: 0;
 }
+
+
 
 /*---Header---*/
 header {
@@ -46,6 +50,7 @@ header nav ul li a {
     }
 
 
+
 /*---Main---*/
 
 .hero {
@@ -61,17 +66,28 @@ header nav ul li a {
     background-attachment: fixed;
     }
 
+.hero h2 {
+    text-align: center;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    background: black;
+    opacity: 0.5;
+
+}
+
 .hero p {
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: white;
     background: black;
     opacity: 0.5;
-    }    
+    }
 
 .articles {
     display:flex;
@@ -88,7 +104,7 @@ header nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -103,30 +119,30 @@ header nav ul li a {
 
 .equipo {
     text-align: center;
-    background-color: #48A43F;
-    color: whitesmoke;
+    background-color: #07B394;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     }
 
-.equipo h2 {
+.equipo h2, .servicios h2 {
     font-weight: 600;
     font-size: 1.5rem;
     padding: 10px;
 }
 
-.equipo h3 {
+.equipo h3, .servicios h3 {
     margin: 10px;
     font-weight: 600;
     font-size: 1.25rem;
 }
 
-.equipo h4 {
+.equipo h4, .servicios h4 {
     font-weight: 600;
     margin: 10px;
     font-size: 1rem;
     }
 
-.equipo p {
+.equipo p, .servicios p {
     font-weight: 400;
     font-size: 0.85rem;    
     }
@@ -138,17 +154,103 @@ header nav ul li a {
     }
 
 .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #209A67;
-    color: whitesmoke;
+    color: white;
     font-family: 'Open Sans', sans-serif;
-}    
-
-.servicios h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 10px;
 }
+.servicios h2 {
+    text-align: center;
+}
+
+.serviciosLine1 {
+    display: flex;
+    }     
+
+.serviciosLine1 div {
+    display: flex;
+    flex-direction: column;
+    }
+
+.serviciosLine1Card {
+    margin: 20px, 10px, 20px, 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.serviciosLine1Card p {
+    padding: 20px;
+}
+
+.serviciosLine2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+.serviciosLine2Card {
+    margin: 20px, 10px, 20px, 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.serviciosLine2Card div {
+    padding: 20px;
+}
+
+.contacto {
+    background-color: #07B394;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly   ;
+}
+
+.contactoForm {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactoForm fieldset {
+    padding: 10px;
+    border: none;
+} 
+
+.contactoForm h2, .contactoMap h2 {
+    padding: 10px;;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contactoMap {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.contactoMap p,iframe {
+    padding: 10px;
+    text-align: right;
+}
+
+.contactoMap div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+
 
 /*---Footer---*/
 footer {
