@@ -224,6 +224,22 @@ header nav ul li a {
     border: none;
 } 
 
+fieldset div {
+    margin: 10px, 5px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formButtons {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .contactoForm h2, .contactoMap h2 {
     padding: 10px;;
     font-weight: 600;
