@@ -17,7 +17,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: #08b377;
-}
+    flex-wrap: wrap;
+    }
 
 .mainLogo {
     height: 180px;
@@ -35,6 +36,7 @@ header nav ul {
     list-style: none;
     flex-direction: row;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 header nav ul li{
@@ -155,6 +157,7 @@ header nav ul li a {
 
 .servicios {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     background-color: #209A67;
@@ -171,6 +174,7 @@ header nav ul li a {
 
 .serviciosLine1 div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     }
 
