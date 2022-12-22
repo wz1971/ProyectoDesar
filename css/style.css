@@ -3,14 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 
-
 /*---Reset---*/ 
 * {
     margin: 0;
     padding: 0;
 }
-
-
 
 /*---Header---*/
 header {
@@ -20,7 +17,7 @@ header {
     flex-wrap: wrap;
     }
 
-.mainLogo {
+.main-logo {
     height: 180px;
     width: 180px;
 }
@@ -50,8 +47,6 @@ header nav ul li a {
     color: white;
     font-size: 1.5rem;
     }
-
-
 
 /*---Main---*/
 
@@ -101,7 +96,7 @@ header nav ul li a {
     font-family: 'Open Sans', sans-serif;
     }
 
-.articleContents {
+.article-contents {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,10 +107,10 @@ header nav ul li a {
     padding: 20px;
 }
 
-.articleContents h2 {
+.article-contents h2 {
     margin-bottom: 10px;
 }
-.articleContents p {
+.article-contents p {
     margin-top: 10px;
 }
 
@@ -168,17 +163,17 @@ header nav ul li a {
     text-align: center;
 }
 
-.serviciosLine1 {
+.servicios-line1 {
     display: flex;
     }     
 
-.serviciosLine1 div {
+.servicios-line1 div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     }
 
-.serviciosLine1Card {
+.servicios-line1-card {
     margin: 20px, 10px, 20px, 10px;
     padding: 40px;
     display: flex;
@@ -186,24 +181,24 @@ header nav ul li a {
     text-align: center;
 }
 
-.serviciosLine1Card p {
+.servicios-line1-card p {
     padding: 20px;
 }
 
-.serviciosLine2 {
+.servicios-line2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     }
 
-.serviciosLine2Card {
+.servicios-line2-card {
     margin: 20px, 10px, 20px, 10px;
     padding: 40px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.serviciosLine2Card div {
+.servicios-line2-card div {
     padding: 20px;
 }
 
@@ -216,14 +211,14 @@ header nav ul li a {
     justify-content: space-evenly   ;
 }
 
-.contactoForm {
+.contacto-form {
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.contactoForm fieldset {
+.contacto-form fieldset {
     padding: 10px;
     border: none;
 } 
@@ -237,40 +232,35 @@ label {
     justify-content: space-between;
 }
 
-.formButtons {
+.form-buttons {
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 
-.contactoForm h2, .contactoMap h2 {
+.contacto-form h2, .contacto-map h2 {
     padding: 10px;;
     font-weight: 600;
     text-align: center;
 }
 
-.contactoMap {
+.contacto-map {
     margin: 10px;
     display: flex;
     justify-content: space-between;
     }
 
-.contactoMap p,iframe {
+.contacto-map p,iframe {
     padding: 10px;
     text-align: right;
 }
 
-.contactoMap div {
+.contacto-map div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-
-
-
-
-
 
 /*---Footer---*/
 footer {
@@ -283,9 +273,11 @@ footer ul li {
     display: inline;
     }
 
-.socialLogo {
+.social-logo {
     height: 60px;
     width: 60px;
     margin: 20px;
     padding: 20px;    
 }
+
+/*---Media Queries---*/
