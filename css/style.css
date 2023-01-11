@@ -41,7 +41,7 @@ header nav ul li a {
         text-shadow: 4px 4px 2px rgba(0,0,0,0.6);  
     }    
 
-/*---Main---*/
+/*---Inicio---*/
 
 .hero {
     display: flex;
@@ -64,7 +64,7 @@ header nav ul li a {
     font-size: 2rem;
     font-weight: 600;
     background: black;
-    opacity: 0.5;
+    opacity: 0.6;
 
 }
 
@@ -79,6 +79,8 @@ header nav ul li a {
     background: black;
     opacity: 0.5;
     }
+
+/*--- Misión y Visión --*/
 
 .articles {
     display:flex;
@@ -105,6 +107,8 @@ header nav ul li a {
 .article-contents p {
     margin-top: 10px;
 }
+
+/*---Equipo / Servicios---*/
 
 .equipo {
     text-align: center;
@@ -170,51 +174,25 @@ header nav ul li a {
 
 .servicios h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
-.servicios-line1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    }     
-
-
-.servicios-line1 div {
-    display: flex;
-    flex-direction: column;
-    }
-
-.servicios-line1-card {
-    margin: 20px, 10px, 20px, 10px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.carousel-caption h3, .carousel-caption p {
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+    background-color: black;
+    opacity: 0.6;
 }
 
-.servicios-line1-card img, .servicios-line2-card-img {
-    height: 224px;
-    width: 336px;    
+.carousel-caption h3 {
+    font-size: 1.8rem;
 }
 
-.servicios-line1-card p {
-    padding: 20px;
+.carousel-caption p {
+    font-size: 1.2rem;
 }
 
-.servicios-line2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    }
-
-.servicios-line2-card {
-    margin: 20px, 10px, 20px, 10px;
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.servicios-line2-card div {
-    padding: 20px;
-}   
+/*---Contacto---*/
 
 .contacto {
     background-color: #07B394;
@@ -303,17 +281,6 @@ footer ul li {
 
 /*-----Media Queries-----*/
 
-@media screen and (max-width:1260px) {
-    .servicios-line1-card, .servicios-line2-card {
-        margin: 10px 5px 10px 5px;
-        padding: 10px;
-        }
-    .servicios-line1-card img, .servicios-line2-card img {
-            height: 200px;
-            width: 300px;    
-        }
-}
-
 @media screen and (max-width:1120px) {
     .main-logo {
         grid-row: 1;
@@ -323,12 +290,13 @@ footer ul li {
     header nav ul li a {
         font-size: 1.3rem;
     }
-    .hero h2, .article-contents h2 {
+    .hero h2, .article-contents h2, .servicios h2{
         font-size: 1.6rem;
     }
     .hero p, .article-contents p {
         font-size: 1rem;
     }
+    
 }
 
 @media screen and (max-width:1000px) {
@@ -339,7 +307,7 @@ footer ul li {
     header nav ul li a {
         font-size: 1.1rem;
     }
-    .hero h2, .article-contents h2 {
+    .hero h2, .article-contents h2, .servicios h2 {
         font-size: 1.4rem;
     }
     .hero p , .article-contents p{
@@ -370,6 +338,15 @@ footer ul li {
         grid-row: 2;
         grid-column: 2;
     }
+    .carousel-caption h3, .carousel-caption p {
+        padding: 5px 10px 5px 10px;
+    }
+    .carousel-caption h3 {
+        font-size: 1.6rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
     .contacto {
         flex-direction: column;
     }
@@ -383,12 +360,22 @@ footer ul li {
     }
 }
 
-@media screen and (max-width:762px) {
+@media screen and (max-width:768px) {
         header nav ul li a {
             font-size: 0.8rem;
         }
         .article-contents {
             margin: 0;
+        }
+        .carousel-caption {
+            right:10%;
+            left:10%;
+        }
+        .carousel-caption h3 {
+            font-size: 1.4rem;
+        }
+        .carousel-caption p {
+            font-size: 0.8rem;
         }
         .social-logo {
             height: 50px;
@@ -399,6 +386,16 @@ footer ul li {
     }
 
 @media screen and (max-width:550px) {
+    .carousel-caption {
+        right: 5%;
+        left: 5%;
+    }
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
     .contacto-map {
         flex-direction: column;
     }
@@ -430,6 +427,12 @@ footer ul li {
         grid-row: 4;
         grid-column: 1;
         }
+    .carousel-caption h3 {
+        font-size: 1.1rem;
+    }
+    .carousel-caption p {
+        font-size: 0.5rem;
+    }
     .contacto-form div h2, .contacto-map div h2 {
         font-size: 1.1rem;
         }
@@ -448,6 +451,12 @@ footer ul li {
 }
 
 @media screen and (max-widht:350px) {
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+    .carousel-caption p {
+        font-size: 0.5rem;
+    }
     label {
         font-size: 0.7rem;
         justify-content: space-around;
