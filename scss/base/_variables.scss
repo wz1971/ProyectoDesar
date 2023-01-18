@@ -1,0 +1,42 @@
+/*---VARIABLES---*/
+
+$fontfam: "Open Sans", sans-serif;
+
+$bgcolor:
+#08b377,
+#209a67,
+#07b394,
+black,
+white;
+
+/*---MAPS---*/
+
+$cardprops:(
+    display: grid,
+    grid-template-columns: repeat(4, 1fr),
+    justify-items: center,
+);
+
+/*---MIXINS---*/
+
+@mixin stitles ($stmargin,$stpadding,$stfweight,$stfsize,$stalign){
+    margin: $stmargin; 
+    padding: $stpadding;
+    font-weight: $stfweight;
+    font-size: $stfsize;
+    text-align: $stalign;
+}
+
+@mixin ccaptions ($ctop,$cbottom,$cleft,$cright,$cbradius){
+    top: $ctop;
+    bottom: $cbottom;
+    left: $cleft;
+    right: $cright;
+    border-radius: $cbradius;
+}
+
+@mixin fflex ($fdisplay,$fdirection,$fjustify){
+    display: $fdisplay;
+    flex-direction: $fdirection;
+    justify-content: $fjustify;
+}

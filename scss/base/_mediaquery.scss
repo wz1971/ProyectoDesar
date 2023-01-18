@@ -1,0 +1,320 @@
+/*---MEDIA QUERIES---*/
+
+/*---1120 PX---*/
+@media screen and (max-width: 1120px) {
+  .main-logo {
+    grid-row: 1;
+    height: 120px;
+    width: 120px;
+  }
+  header nav div div ul li {
+    &:hover {
+      transform: scale(1);
+    }
+    a {
+      font-size: 1.3rem;
+    }
+  }
+  .hero {
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .articles {
+    div {
+      h2 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .servicios {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  /* --- 1000 PX --- */
+  @media screen and (max-width: 1000px) {
+    .main-logo {
+      height: 100px;
+      width: 100px;
+    }
+    header nav div div ul li {
+      a {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .hero {
+    h2 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .articles {
+    flex-direction: column;
+    div {
+      padding: 20px;
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .equipo .equipo-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    card1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    card2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    card3 {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    card4 {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
+  .servicios h2 {
+    font-size: 1.4rem;
+  }
+  .carousel-caption {
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+  .carousel-item {
+    p {
+      font-size: 1rem;
+    }
+  }
+  .contacto {
+    flex-direction: column;
+  }
+  .contacto-form {
+    padding: 15px;
+    border-bottom: 2px solid gray;
+    justify-content: space-around;
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  .contacto-map {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/*---940 PX---*/
+@media screen and (max-width: 940px) {
+  .carousel-caption {
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+  .carousel-item {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/*---768PX---*/
+@media screen and (max-width: 768px) {
+  header nav div div ul li {
+    a {
+      font-size: 0.8rem;
+    }
+  }
+  .articles div {
+    margin: 0;
+  }
+
+  .carousel .carousel-indicators button {
+    zoom: 80%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    bottom: 55%;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .carousel-caption {
+    border-radius: 10px;
+  }
+  .carousel-caption {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  .carousel-item {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .social-logo {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+/*---650 PX ---*/
+@media screen and (max-width: 650px) {
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    bottom: 40%;
+  }
+  .carousel-indicators {
+    bottom: 39%;
+  }
+}
+
+/*---550 PX ---*/
+@media screen and (max-width: 550px) {
+  .carousel .carousel-indicators button {
+    zoom: 70%;
+  }
+  .contacto-map {
+    flex-direction: column;
+  }
+  .contacto-map {
+    div {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*---480 PX---*/
+@media screen and (max-width: 480px) {
+  .equipo .equipo-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    card1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    card2 {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    card3 {
+      grid-row: 3;
+      grid-column: 1;
+    }
+    card4 {
+      grid-row: 4;
+      grid-column: 1;
+    }
+  }
+  .carousel .carousel-indicators button {
+    zoom: 60%;
+  }
+  .carousel-caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    bottom: 45%;
+  }
+  .carousel-indicators {
+    bottom: 44%;
+  }
+
+  .carousel-caption {
+    h3 {
+    margin: 3px;
+    font-size: 0.9rem;
+    }
+  }
+  .carousel-item {
+    p {
+    padding: 10px;
+    }
+  }
+  .contacto-form {
+    div {
+        h2 {
+            font-size: 1.1rem;
+        }
+        label {
+            font-size: 0.7rem;
+        }
+    }
+  }
+  .contacto-map {
+    div {
+        h2 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 0.7rem;
+        }
+    }
+    iframe {
+        width: 80%;
+    }
+  }    
+  .social-logo {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+/*---400 PX---*/
+@media screen and (max-width: 400px) {
+    .carousel-caption {
+      bottom: 50%;
+    }
+    .carousel-caption {
+        h3 {
+        font-size: 0.8rem;
+        }
+    }
+    .carousel-indicators {
+      bottom: 48%;
+    }
+  }
+
+/*---300 PX---*/
+@media screen and (max-width: 300px) {
+    .equipo-img {
+      width: 180px;
+      height: 270px;
+    }
+    .social-logo {
+      height: 30px;
+      width: 30px;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+/*---FOOTER---*/
+.social-logo {
+    box-sizing: content-box;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    padding: 20px;
+    transition: 2s ease-out;
+    &:hover {
+    transform:scale(1.3);
+    }
+}
+
+footer {
+    background-color:  nth($bgcolor,1);
+    display: flex;
+    justify-content: space-evenly;
+    ul {
+        li {
+            display: inline;
+        }
+    }
+}
