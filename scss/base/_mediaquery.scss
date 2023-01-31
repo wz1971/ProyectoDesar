@@ -60,7 +60,6 @@
     }
   }
   .articles {
-    flex-direction: column;
     div {
       padding: 20px;
       h2 {
@@ -145,13 +144,13 @@
       font-size: 0.8rem;
     }
   }
-  .articles div {
+  .articles {
+    flex-direction: column;
+    div {
     margin: 0;
-  }
+    }
+  }  
 
-  .carousel .carousel-indicators button {
-    zoom: 80%;
-  }
   .carousel-control-prev,
   .carousel-control-next {
     bottom: 55%;
@@ -196,8 +195,8 @@
 
 /*---550 PX ---*/
 @media screen and (max-width: 550px) {
-  .carousel .carousel-indicators button {
-    zoom: 70%;
+  .carousel-indicators { 
+        transform: scale(0.8);
   }
   .contacto-map {
     flex-direction: column;
@@ -213,6 +212,14 @@
 
 /*---480 PX---*/
 @media screen and (max-width: 480px) {
+  .articles {
+    div {
+      img {
+        height: 384px;
+        width: 256px;
+      }
+    }
+  }
   .equipo .equipo-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -235,8 +242,8 @@
       grid-column: 1;
     }
   }
-  .carousel .carousel-indicators button {
-    zoom: 60%;
+  .carousel-indicators {
+    transform: scale(0.7);
   }
   .carousel-caption {
     padding-top: 1rem;
@@ -249,38 +256,38 @@
 
   .carousel-caption {
     h3 {
-    margin: 3px;
-    font-size: 0.9rem;
+      margin: 3px;
+      font-size: 0.9rem;
     }
   }
   .carousel-item {
     p {
-    padding: 10px;
+      padding: 10px;
     }
   }
   .contacto-form {
     div {
-        h2 {
-            font-size: 1.1rem;
-        }
-        label {
-            font-size: 0.7rem;
-        }
+      h2 {
+        font-size: 1.1rem;
+      }
+      label {
+        font-size: 0.7rem;
+      }
     }
   }
   .contacto-map {
     div {
-        h2 {
-            font-size: 1.1rem;
-        }
-        p {
-            font-size: 0.7rem;
-        }
+      h2 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
     }
     iframe {
-        width: 80%;
+      width: 80%;
     }
-  }    
+  }
   .social-logo {
     height: 40px;
     width: 40px;
@@ -291,30 +298,30 @@
 
 /*---400 PX---*/
 @media screen and (max-width: 400px) {
-    .carousel-caption {
-      bottom: 50%;
-    }
-    .carousel-caption {
-        h3 {
-        font-size: 0.8rem;
-        }
-    }
-    .carousel-indicators {
-      bottom: 48%;
+  .carousel-caption {
+    left:10%;
+    right:10%;
+    bottom: 55%;
+    h3 {
+      font-size: 0.8rem;
     }
   }
 
+  .carousel-indicators {
+    bottom: 53%;
+  }
+}
+
 /*---300 PX---*/
 @media screen and (max-width: 300px) {
-    .equipo-img {
-      width: 180px;
-      height: 270px;
-    }
-    .social-logo {
-      height: 30px;
-      width: 30px;
-      margin: 0;
-      padding: 10px;
-    }
+  .equipo-img {
+    width: 180px;
+    height: 270px;
   }
-  
+  .social-logo {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 10px;
+  }
+}

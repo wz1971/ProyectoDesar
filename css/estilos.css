@@ -67,17 +67,21 @@ header {
 .articles {
   display: flex;
   background-color: #209a67;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
   .articles div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     color: white;
     text-align: center;
     margin: 20px;
     padding: 40px; }
     .articles div h2 {
       margin-bottom: 10px; }
+    .articles div img {
+      height: 480px;
+      width: 320px; }
     .articles div p {
       margin-top: 10px; }
 
@@ -117,11 +121,13 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center; }
-    .equipo .equipo-cards .equipo-cards-card img {
-      transition: 1s ease-in-out; }
-      .equipo .equipo-cards .equipo-cards-card img:hover {
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        transform: scale(1.1); }
+    .equipo .equipo-cards .equipo-cards-card {
+      box-sizing: content-box; }
+      .equipo .equipo-cards .equipo-cards-card img {
+        transition: 1s ease-in-out; }
+        .equipo .equipo-cards .equipo-cards-card img:hover {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          transform: scale(1.1); }
 
 /*---SERVICIOS---*/
 .servicios {
@@ -190,6 +196,10 @@ header {
     border: none; }
     .contacto-form fieldset div {
       margin: 10px, 5px; }
+
+.input-group-text {
+  padding: 0;
+  border: 0; }
 
 label {
   display: flex;
@@ -278,14 +288,12 @@ footer {
     font-size: 1.4rem; }
   .hero p {
     font-size: 0.8rem; }
-  .articles {
-    flex-direction: column; }
-    .articles div {
-      padding: 20px; }
-      .articles div h2 {
-        font-size: 1.4rem; }
-      .articles div p {
-        font-size: 0.8rem; }
+  .articles div {
+    padding: 20px; }
+    .articles div h2 {
+      font-size: 1.4rem; }
+    .articles div p {
+      font-size: 0.8rem; }
   .equipo .equipo-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,10 +339,10 @@ footer {
 @media screen and (max-width: 768px) {
   header nav div div ul li a {
     font-size: 0.8rem; }
-  .articles div {
-    margin: 0; }
-  .carousel .carousel-indicators button {
-    zoom: 80%; }
+  .articles {
+    flex-direction: column; }
+    .articles div {
+      margin: 0; }
   .carousel-control-prev,
   .carousel-control-next {
     bottom: 55%; }
@@ -365,8 +373,8 @@ footer {
 
 /*---550 PX ---*/
 @media screen and (max-width: 550px) {
-  .carousel .carousel-indicators button {
-    zoom: 70%; }
+  .carousel-indicators {
+    transform: scale(0.8); }
   .contacto-map {
     flex-direction: column; }
   .contacto-map div p {
@@ -374,6 +382,9 @@ footer {
 
 /*---480 PX---*/
 @media screen and (max-width: 480px) {
+  .articles div img {
+    height: 384px;
+    width: 256px; }
   .equipo .equipo-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -391,8 +402,8 @@ footer {
     .equipo .equipo-cards card4 {
       grid-row: 4;
       grid-column: 1; }
-  .carousel .carousel-indicators button {
-    zoom: 60%; }
+  .carousel-indicators {
+    transform: scale(0.7); }
   .carousel-caption {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -423,11 +434,13 @@ footer {
 /*---400 PX---*/
 @media screen and (max-width: 400px) {
   .carousel-caption {
-    bottom: 50%; }
-  .carousel-caption h3 {
-    font-size: 0.8rem; }
+    left: 10%;
+    right: 10%;
+    bottom: 55%; }
+    .carousel-caption h3 {
+      font-size: 0.8rem; }
   .carousel-indicators {
-    bottom: 48%; } }
+    bottom: 53%; } }
 
 /*---300 PX---*/
 @media screen and (max-width: 300px) {
